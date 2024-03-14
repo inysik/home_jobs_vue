@@ -225,7 +225,7 @@ letter-spacing: 2px;
 font-size: 16px;
 text-align: start;
 width: 100%;
-padding-left: px;
+// padding-left: px;
 @include flex(space-between );
 padding-right: 21px;
 
@@ -246,6 +246,7 @@ background-color:#FFFFFF;
 }
 .footer{
 margin-bottom: 134px;
+margin-top: 200px;
 }
 .footer_cards{
 @include flex(space-between,center ,row );
@@ -280,5 +281,85 @@ font-size: 22px;
 @extend %headingText;
 font-size: 25px;
 }
+
+
+.top{
+    background: #FFFFFF;
+    
+
+    &_title{
+        @extend %headingText;
+        font-size:50px ;
+        line-height: 62.5px;
+        margin-bottom: 0px;
+
+    }
+    &_text{
+        @extend %plainText;
+        font-size: 22px;
+        line-height: 33px;
+        margin-top: 0px;
+    }
+
+
+    // padding-bottom: 200px;
+}
+.top_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     justify-content: center;
+    //  padding: 41px 78px 41px 78px;   
+     border-radius: 37px 37px 0px 0px;
+     background-color: #FFFFFF;
+     z-index: 1;
+     position: relative;
+     transform: translateY(-100%);
+     width: 503px;
+
+
+}
+
+.Latest_Post_title{
+    @extend %headingText;
+    font-size: 50px;
+    letter-spacing: 2%;
+}
+.Latest_Post_contents{
+    @include flex(center,center ,row);
+    gap: 65px;
+
+}
+.Latest_Post_content{
+    padding: 51px 34px 51px 0px;
+    width: 470px; 
+}
+.Latest_Post_content_title{
+@extend %headingText;
+font-size: 25px;
+letter-spacing: 2%;
+line-height: 31px;
+}
+.Latest_Post_content_text{
+    @extend %plainText;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 1%;
+}
+
+.blog_cards_vue{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 28px;
+    column-gap: 28px;
+    
+}
+.vue_card{
+    padding: 21px;
+
+}
+
+
+
 
 

@@ -186,8 +186,7 @@ font-size:77px;
 margin: 0px;
 
 }
-.blog{
-}
+
 .blog_name{
 text-align: center;
 }
@@ -360,6 +359,28 @@ line-height: 31px;
 }
 
 
+.blog_det_contents{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 52px;
+    padding-top: 200px;
+}
 
-
+.articles{
+    width: 804px;
+}
+.quote{
+    height: 267px;
+    padding: 53px 227px 53px 227px;
+    border-radius: 50px;
+    background-color: #F4F0EC;
+    @include flex(center,center ,column );
+   &_text{
+    @extend %headingText;
+    font-size:25px;
+    font-style: italic;
+    line-height: 31.25px;
+    color: #CDA274;
+   }
+}
 

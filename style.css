@@ -9,7 +9,7 @@
   font-family: "Jost";
 }
 
-.Latest_Post_content_title, .Latest_Post_title, .top_title, .footer_cards_contact_title, .footer_cards_pages_title, .bloc_cards_content_title, .counter_card_name, .project_card_title, .heading_title, .banner_header {
+.quote_text, .Latest_Post_content_title, .Latest_Post_title, .top_title, .footer_cards_contact_title, .footer_cards_pages_title, .bloc_cards_content_title, .counter_card_name, .project_card_title, .heading_title, .banner_header {
   color: #292F36;
   font-weight: 400;
   font-family: "DM Serif Display";
@@ -357,4 +357,32 @@ ul {
 
 .vue_card {
   padding: 21px;
+}
+
+.blog_det_contents {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 52px;
+  padding-top: 200px;
+}
+
+.articles {
+  width: 804px;
+}
+
+.quote {
+  height: 267px;
+  padding: 53px 227px 53px 227px;
+  border-radius: 50px;
+  background-color: #F4F0EC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.quote_text {
+  font-size: 25px;
+  font-style: italic;
+  line-height: 31.25px;
+  color: #CDA274;
 }/*# sourceMappingURL=style.css.map */
